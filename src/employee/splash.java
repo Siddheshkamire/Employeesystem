@@ -17,13 +17,14 @@ public class splash extends JFrame {
 
 
         setSize(1170,650);
-        setLocation(200,50);
+        setLocation(400,200);
         setLayout(null);
         setVisible(true);
 
         try{
-            Thread.sleep(5000);
+            Thread.sleep(4000);
             setVisible(false);
+            new login();
         }catch (InterruptedException e){
         }
 
