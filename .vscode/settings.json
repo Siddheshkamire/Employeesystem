@@ -4,7 +4,9 @@
         "src\\employee"
     ],
     "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [],
+    "java.project.referencedLibraries": [
+        "d:\\OneDrive\\Desktop\\VS Code\\mysql-connector-java-8.0.28.jar"
+    ],
     "java.configuration.runtimes": [
     ]
 }
