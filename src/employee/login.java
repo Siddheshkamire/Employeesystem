@@ -4,7 +4,6 @@ import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -59,7 +58,7 @@ public class login extends JFrame implements ActionListener{
         add(back);
 
 
-        ImageIcon i1= new ImageIcon(ClassLoader.getSystemResource("icons/Login.PNG"));
+        ImageIcon i1= new ImageIcon(ClassLoader.getSystemResource("icons/Login.gif"));
         Image i2=i1.getImage().getScaledInstance(600, 300, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel img = new JLabel(i3);
@@ -75,15 +74,16 @@ public class login extends JFrame implements ActionListener{
 
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public void actionPerformed(ActionEvent e){
         if(e.getSource()==login){
             try {
                 String username= tusername.getText();
-                String password= new String(tpassword.getPassword());
+                String password= tpassword.getText();
 
                 conn conn= new conn();
-                String query= "select * from login where username=''"+ username +"'and password='"+ password +"'";
+                String query= "select * from login where username='"+ username +"'and password='"+ password +"'";
                 ResultSet resultSet = conn.statement.executeQuery(query);
                 if(resultSet.next()){
                     setVisible(false);
