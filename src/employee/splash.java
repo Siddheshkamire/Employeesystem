@@ -25,6 +25,7 @@ public class splash extends JFrame {
             Thread.sleep(4000);
             setVisible(false);
             new login();
+            
         }catch (InterruptedException e){
         }
 
