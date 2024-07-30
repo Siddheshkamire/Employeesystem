@@ -32,7 +32,8 @@ public class main_class extends JFrame{
         add.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-
+                new add_emp();
+                setVisible(false);
             }
         });
         img.add(add);
@@ -46,7 +47,7 @@ public class main_class extends JFrame{
         view.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-
+                
             }
         });
         img.add(view);
@@ -66,7 +67,7 @@ public class main_class extends JFrame{
 
 
 
-        Font font= new Font("Arial", Font.BOLD, 16);
+        Font font= new Font("Now", Font.BOLD, 20);
         add.setFont(font);
         view.setFont(font);
         remove.setFont(font);
