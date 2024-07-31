@@ -5,8 +5,11 @@
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "d:\\OneDrive\\Desktop\\VS Code\\mysql-connector-java-8.0.28.jar"
+        "d:\\OneDrive\\Desktop\\VS Code\\mysql-connector-java-8.0.28.jar",
+        "d:\\OneDrive\\Desktop\\VS Code\\jcalendar-tz-1.3.3-4.jar",
+        "d:\\OneDrive\\Desktop\\VS Code\\ResultSet2xml.jar"
     ],
     "java.configuration.runtimes": [
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
