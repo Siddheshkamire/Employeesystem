@@ -165,6 +165,8 @@ class add_emp extends JFrame implements ActionListener{
         tmobile.setBackground(Color.white);
         image.add(tmobile);
 
+
+        
         //emp aadhar
         JLabel aadhar = new JLabel("Aadhar :");
         aadhar.setBounds(490,500,150,30);
@@ -258,6 +260,9 @@ class add_emp extends JFrame implements ActionListener{
             } catch (Exception E) {
                 E.printStackTrace();
             }
+        }else{
+            setVisible(false);
+            new main_class();
         }
 
     }
